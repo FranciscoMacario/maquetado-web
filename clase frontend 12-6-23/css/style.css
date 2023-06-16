@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.first-nav {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    background-color: #dad9d9;
+}
+
+.first-nav p {
+    color: #505050
+}
+
+.first-nav ul {
+    gap: 15px;
+    display: flex;
+    list-style: none;
+}
+
+.first-nav > ul > a {
+    text-decoration: none;
+    color: #505050
+}
+
+.second-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.second-nav h1{
+    font-size: 50px;
+    font-family: 'Kalam', cursive;
+    margin: 50px;
+}
+
+.second-nav > h1 > span {
+    transform: rotate(10deg);
+}
+
+.second-nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    gap: 10px
+}
+
+.second-nav > ul > a {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #373636;
+}
+
+.second-nav > ul > a:hover {
+    /*shake animation*/
+   animation: shake .3s ease-in; 
+}
+
+.banner {
+    background-image: url("../img/img-banner.jpg");
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.banner h2 {
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    color: #ffffff;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner button {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    padding: 10px 20px;
+    border-radius: 70px;
+    border: none;
+    margin-top: 30px;
+    color: #ffffff;
+    background-color: #c3b19b;
+    text-transform: uppercase;
+}
+
+/*keyframe animation shake*/
+@keyframes shake {
+    2%   {transform: translateX(-4px)}
+    8%   {transform: translateX(4px)}
+    14%  {transform: translateX(-4px)}
+    20%  {transform: translateX(4px)}
+    26%  {transform: translateX(-4px)}
+    32%  {transform: translateX(4px)}
+    38%  {transform: translateX(-4px)}
+    44%  {transform: translateX(4px)}
+    50%  {transform: translateX(-4px)}
+    56%  {transform: translateX(4px)}
+    62%  {transform: translateX(-4px)}
+    68%  {transform: translateX(4px)}
+    74%  {transform: translateX(-4px)}
+    80%  {transform: translateX(4px)}
+    86%  {transform: translateX(-4px)}
+    92%  {transform: translateX(4px)}
+    98%  {transform: translateX(-4px)}
+    100% {transform: translateX(0);}
+}
